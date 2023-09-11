@@ -71,5 +71,12 @@ console.log(isPowerOfTwo(3));
 `Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.`
 
 ```
-
+var mySqrt = function(x) {
+    let start=1;
+    while(start*start<=x){
+        start++;
+    }
+    return start-1;
+};
+console.log(mySqrt(15))
 ```
